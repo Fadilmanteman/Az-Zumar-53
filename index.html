@@ -35,6 +35,8 @@
             font-weight: bold;
             text-transform: uppercase;
             letter-spacing: 1px;
+            position: relative;
+            animation: slideIn 1.2s ease-in-out;
         }
 
         .arabic {
@@ -46,6 +48,7 @@
             text-align: right;
             direction: rtl;
             margin-bottom: 20px;
+            animation: fadeIn 1.5s ease-in-out;
         }
 
         .translation {
@@ -53,12 +56,14 @@
             font-size: 20px;
             color: #444; /* Warna abu-abu gelap */
             line-height: 1.6;
+            animation: fadeIn 2s ease-out;
         }
 
         footer {
             margin-top: 20px;
             font-size: 14px;
             color: #888;
+            animation: fadeIn 2.5s ease-out;
         }
 
         footer a {
@@ -70,22 +75,53 @@
             text-decoration: underline;
         }
 
-        /* Animation */
+        /* Animations */
         @keyframes fadeIn {
             from {
                 opacity: 0;
-                transform: translateY(-10px);
+                transform: translateY(20px);
             }
             to {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* Audio Styles */
+        .audio-control {
+            margin-top: 20px;
+        }
+
+        .audio-control button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #3a539b;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .audio-control button:hover {
+            background-color: #2c3e50;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-<h1>lembutnya allah bagi para pendosa</h1>
+        <h1>lembutnya allah bagi para pendosa</h1>
         <h1>Az-Zumar Ayat 53</h1>
         <p class="arabic">
             قُلْ يَا عِبَادِيَ ٱلَّذِينَ أَسْرَفُوا۟ عَلَىٰٓ أَنفُسِهِمْ لَا تَقْنَطُوا۟ مِن رَّحْمَةِ ٱللَّهِ ۚ 
@@ -96,8 +132,8 @@
             Sesungguhnya Allah mengampuni dosa-dosa semuanya. Sungguh, Dialah yang Maha Pengampun, Maha Penyayang."
         </p>
         <footer>
-            Dikutip dari Al-Qur'an - <a href="https://quran.com/39/53" target="_blank">Baca selengkapnya</a>
-            <footer>fadiiil_12</footer>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;">
+            @fadiiil_12 mengutip dari Al-Qur'an - <a href="https://quran.com/39/53" target="_blank">Baca selengkapnya</a>
         </footer>
     </div>
 </body>
