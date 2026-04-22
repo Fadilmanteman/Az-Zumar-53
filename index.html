@@ -60,20 +60,28 @@
         }
 
         footer {
-            margin-top: 20px;
-            font-size: 14px;
-            color: #888;
-            animation: fadeIn 2.5s ease-out;
-        }
+    margin-top: 20px;
+    font-size: 14px;
+    color: #888;
+    animation: fadeIn 2.5s ease-out;
+    /* Menambahkan ketebalan huruf */
+    font-weight: bold; 
+    text-align: center; /* Opsional: agar footer di tengah */
+}
 
-        footer a {
-            color: #3a539b; /* Warna biru lembut */
-            text-decoration: none;
-        }
+footer a {
+    color: #3a539b; /* Warna biru lembut */
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px; /* Memberi jarak antara ikon dan teks */
+    transition: 0.3s;
+}
 
-        footer a:hover {
-            text-decoration: underline;
-        }
+footer a:hover {
+    text-decoration: underline;
+    color: #E1306C; /* Berubah jadi warna Instagram saat kursor di atasnya */
+}
 
         /* Animations */
         @keyframes fadeIn {
