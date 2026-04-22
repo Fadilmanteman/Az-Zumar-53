@@ -64,25 +64,29 @@
     font-size: 14px;
     color: #888;
     animation: fadeIn 2.5s ease-out;
-    /* Menambahkan ketebalan huruf */
-    font-weight: bold; 
-    text-align: center; /* Opsional: agar footer di tengah */
+    font-weight: bold; /* Membuat seluruh teks di footer tebal */
+    text-align: center;
 }
 
-footer a {
-    color: #3a539b; /* Warna biru lembut */
+.instagram-link {
+    color: #3a539b;
     text-decoration: none;
+    /* Menyatukan ikon dan teks */
     display: inline-flex;
     align-items: center;
-    gap: 8px; /* Memberi jarak antara ikon dan teks */
+    gap: 5px; /* Jarak kecil antara ikon dan @username */
     transition: 0.3s;
 }
 
-footer a:hover {
+.instagram-link:hover {
+    color: #E1306C; /* Warna berubah saat disentuh kursor */
     text-decoration: underline;
-    color: #E1306C; /* Berubah jadi warna Instagram saat kursor di atasnya */
 }
 
+/* Memastikan ukuran ikon pas dengan teks */
+.instagram-link i {
+    font-size: 16px;
+}
         /* Animations */
         @keyframes fadeIn {
             from {
@@ -140,8 +144,8 @@ footer a:hover {
             Sesungguhnya Allah mengampuni dosa-dosa semuanya. Sungguh, Dialah yang Maha Pengampun, Maha Penyayang."
         </p>
         <footer>
-            <a href="https://www.instagram.com/fadil.manteman?igsh=MTY2cWV6c2thMGxxNQ==" target="_blank" rel="noopener noreferrer">
-   @fadil.manteman
+            <a href="https://www.instagram.com/fadil.manteman?igsh=MTY2cWV6c2thMGxxNQ==" target="_blank" rel="noopener noreferrer" class="instagram-link">
+                <i class="fab fa-instagram"></i>@fadil.manteman
 </a>
         </footer>
     </div>
